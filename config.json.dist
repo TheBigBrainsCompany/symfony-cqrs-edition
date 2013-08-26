@@ -1,0 +1,4 @@
+{
+    "themes_path": "src/Acme/Task/Ui/WebBundle/Resources/themes",
+    "active_theme": "default"
+}

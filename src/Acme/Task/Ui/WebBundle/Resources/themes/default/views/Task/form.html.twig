@@ -1,0 +1,8 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate', 'role': 'form', 'class': 'task-form' }}) }}
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.content, 'What do you want to remember?', {'label_attr': {'class': 'task-label'}}) }}
+        {{ form_widget(form.content, {'attr': {'class': 'form-control task-input', 'placeholder': 'i.e: buy beer'}}) }}
+    </div>
+{{ form_end(form) }}

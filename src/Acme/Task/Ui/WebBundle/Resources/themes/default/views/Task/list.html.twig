@@ -1,0 +1,45 @@
+<div class="panel panel-default task-list-panel">
+    <div class="panel-heading">Tasks to do...</div>
+    <div class="panel-body">
+        <ul class="task-list">
+            {% for task in taskCollection %}
+                <li class="task-item{% if loop.index0 is odd %} odd{% endif %}" data-guid="{{ task.id }}">
+                    <span>
+                        <button type="button" class="btn btn-default task-checkbox" data-state="unchecked">
+                            <span class="glyphicon glyphicon-unchecked"></span>
+                        </button>
+                        {{ task.content }}
+                    </span>
+                    <span class="pull-right">
+                        <button type="button" class="btn btn-default task-complete">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <script>
+            $(function() {
+                $('.task-checkbox').on('click', function(e) {
+                    var $button = $(this);
+                    if ($button.attr('data-state') == 'unchecked') {
+                        $button
+                            .attr('data-state', 'checked')
+                            .children('.glyphicon')
+                                .removeClass('glyphicon-unchecked')
+                                .addClass('glyphicon-check')
+                            ;
+                    } else {
+                        $button
+                            .attr('data-state', 'unchecked')
+                            .children('.glyphicon')
+                                .removeClass('glyphicon-check')
+                                .addClass('glyphicon-unchecked')
+                            ;
+                    }
+                });
+            });
+        </script>
+    </div>
+</div>

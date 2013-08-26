@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        {% block stylesheets %}
+            <link href="{{ asset('themes/default/css/style.min.css') }}" rel="stylesheet" media="screen">
+        {% endblock stylesheets %}
+
+        {% block javascripts_head %}
+            <script type="text/javascript" src="{{ asset('themes/default/javascript/main.js') }}"></script>
+        {% endblock javascripts_head %}
+    </head>
+    <body>
+        {% block body %}
+            <header class="page-header">
+                <h1>The Big Brains Company - Symfony Standard CQRS - Task Demo</h1>
+            </header>
+
+            <section class="main">
+                {% block main %}{% endblock %}
+            </section>
+
+            <footer>
+
+            </footer>
+        {% endblock body %}
+
+        {% block javascripts_foot %}{% endblock javascripts_foot %}
+    </body>
+</html>

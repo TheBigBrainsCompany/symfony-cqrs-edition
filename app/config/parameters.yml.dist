@@ -1,0 +1,26 @@
+parameters:
+    db_write_driver:   pdo_mysql
+    db_write_host:     127.0.0.1
+    db_write_port:     3306
+    db_write_user:     root
+    db_write_password: ~
+    db_write_name:     acmecqrs
+        
+    db_read_driver:    pdo_mysql
+    db_read_host:      127.0.0.1
+    db_read_port:      3306
+    db_read_user:      root
+    db_read_password:  ~
+    db_read_name:      acmecqrs
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+    session_path:      "%kernel.root_dir%/../var/sessions"
+
+    themes:            ['default']
+    active_theme:      default

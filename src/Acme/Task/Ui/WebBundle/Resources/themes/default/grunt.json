@@ -1,0 +1,16 @@
+{
+    "javascript": [
+        "web/vendor/jquery/jquery.js",
+        "web/vendor/bootstrap/dist/js/bootstrap.js"
+    ],
+    "css": [
+        "web/vendor/bootstrap/dist/css/bootstrap.css",
+        "src/Acme/Task/Ui/WebBundle/Resources/themes/default/assets/css/style.css"
+    ],
+    "watch": {
+        "less_css": [
+            "css/style.css"
+        ],
+        "javascript": []
+    }
+}

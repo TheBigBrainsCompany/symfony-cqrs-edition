@@ -1,0 +1,82 @@
+imports:
+    - { resource: parameters.yml }
+#    - { resource: security.yml }
+
+framework:
+    #esi:             ~
+    #translator:      { fallback: %locale% }
+    secret:          %secret%
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_proxies: ~
+    session:
+        save_path: %session_path%
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        connections:
+            write:
+                driver:   %db_write_driver%
+                host:     %db_write_host%
+                port:     %db_write_port%
+                user:     %db_write_user%
+                password: %db_write_password%
+                dbname:   %db_write_name%
+                charset:  UTF8
+            read:
+                driver:   %db_read_driver%
+                host:     %db_read_host%
+                port:     %db_read_port%
+                user:     %db_read_user%
+                password: %db_read_password%
+                dbname:   %db_read_name%
+                charset:  UTF8
+
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        entity_managers:
+            write:
+                connection: write
+                auto_mapping: false
+                mappings:
+                    AcmeTaskDomain:
+                        type: xml
+                        prefix: "Acme\Task\Domain"
+                        dir: "%kernel.root_dir%/../src/Acme/Task/Infrastructure/InfrastructureBundle/Resources/config/domain/doctrine"
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+    spool:     { type: memory }
+
+lite_cqrs:
+    monolog: true
+
+liip_theme:
+    themes: %themes%
+    active_theme: %active_theme%
+    autodetect_theme: true
+    load_controllers: false
+    path_patterns:
+        bundle_resource:
+            - %%bundle_path%%/Resources/themes/%%current_theme%%/views/%%template%%
+            - %%bundle_path%%/Resources/themes/fallback_theme/views/%%template%%

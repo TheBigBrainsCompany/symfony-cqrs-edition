@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="acme.task.domain.repository.task_repository.class">Acme\Task\Infrastructure\Persistence\Doctrine\TaskDoctrineOrmRepository</parameter>
+    </parameters>
+
+    <services>
+        <service id="acme.task.domain.repository.task_repository" class="%acme.task.domain.repository.task_repository.class%">
+            <argument type="service" id="doctrine.orm.write_entity_manager" />
+            <argument>Acme\Task\Domain\Model\Task</argument>
+        </service>
+    </services>
+</container>

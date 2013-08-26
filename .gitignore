@@ -1,0 +1,32 @@
+# Project specific
+/web/js/*
+/web/vendor
+/web/themes
+config.json
+
+# Symfony
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+/var/
+/build/
+/vendor/
+/bin/
+/composer.phar
+/web/bundles/
+
+# NodeJS
+/node_modules
+
+# IDE & Environment
+.DS_Store
+nbproject/*
+catalog.xml
+.idea
+*.project
+.vagrant
+Vagrantfile
+
+# vi undofile
+*.*.un~
