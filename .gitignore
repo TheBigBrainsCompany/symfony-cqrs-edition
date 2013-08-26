@@ -6,10 +6,10 @@ config.json
 
 # Symfony
 /app/bootstrap.php.cache
-/app/cache/*
 /app/config/parameters.yml
-/app/logs/*
-/var/
+/var/cache/*
+/var/logs/*
+/var/sessions/*
 /build/
 /vendor/
 /bin/

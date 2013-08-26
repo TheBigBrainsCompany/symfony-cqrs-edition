@@ -38,7 +38,7 @@ You need to copy the file and edit it if necessary.
 $ cp config.json.dist config.json
 ```
 
-### 2.2 Configuring assets
+### 2.2 Configuring and installing assets
 
 You'll need to have NodeJS with `grunt-cli` and `bower` installed on your local machine in order to install the project assets.
 
@@ -48,10 +48,11 @@ To install grunt, just run the following command (debian based system):
 $ sudo npm install -g grunt-cli bower
 ```
 
-Then, install the project npm dependencies:
+Then, install the project npm and bower dependencies:
 
 ```bash
 $ npm install
+$ bower install
 ```
 
 And finally, initialize the project assets with grunt:
