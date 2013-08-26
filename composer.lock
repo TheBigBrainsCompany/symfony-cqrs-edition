@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/benjamindulau/AnoCqrsBundle.git",
-                "reference": "165cfbfbbaadabfeaf742f5a89a349b818c53aec"
+                "reference": "729913d06ef26a01de1b3f51fbffcb77c4db2290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjamindulau/AnoCqrsBundle/zipball/165cfbfbbaadabfeaf742f5a89a349b818c53aec",
-                "reference": "165cfbfbbaadabfeaf742f5a89a349b818c53aec",
+                "url": "https://api.github.com/repos/benjamindulau/AnoCqrsBundle/zipball/729913d06ef26a01de1b3f51fbffcb77c4db2290",
+                "reference": "729913d06ef26a01de1b3f51fbffcb77c4db2290",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 "cqrs",
                 "ddd"
             ],
-            "time": "2013-08-19 21:44:10"
+            "time": "2013-08-26 17:30:46"
         },
         {
             "name": "beberlei/lite-cqrs",
