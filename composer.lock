@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "09348d221cbfb663f30e1deb51dc95e4",
+    "hash": "af03a639f3ae8dfb341b0ce0d148dd9b",
     "packages": [
         {
             "name": "ano/cqrs-bundle",
@@ -1133,6 +1133,43 @@
             "time": "2013-08-07 17:11:16"
         },
         {
+            "name": "tbbc/composer-javascript",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheBigBrainsCompany/composer-javascript.git",
+                "reference": "e31c74071e3127bbde968df686e54f87adb34009"
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/process": ">=2.0,<3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Tbbc\\ComposerJavascript": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Dulau",
+                    "email": "benjamin.dulau@gmail.com"
+                }
+            ],
+            "description": "Composer script handler for executing `npm install` and `bower install` automatically.",
+            "homepage": "https://github.com/TheBigBrainsCompany/composer-javascript",
+            "keywords": [
+                "bower",
+                "composer",
+                "javascript",
+                "npm"
+            ],
+            "time": "2013-08-27 09:42:59"
+        },
+        {
             "name": "twig/extensions",
             "version": "v1.0.0",
             "source": {
@@ -1395,6 +1432,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "tbbc/composer-javascript": 20,
         "ano/cqrs-bundle": 20,
         "liip/theme-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,

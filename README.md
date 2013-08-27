@@ -6,6 +6,13 @@ A default structure for CQRS oriented project and Symfony.
 
 **TODO**
 
+## Requirements
+
+* PHP >= 5.3.3
+* NodeJs with Npm
+* grunt-cli npm package
+* bower npm package
+
 
 ## 1. Installing the project
 
@@ -30,38 +37,30 @@ Composer will install the project and all its dependencies under the `path/to/in
 
 In addition to the composer installation and in order to complete your installation, you need to do the following steps:
 
-### 2.1 Copying the `config.json.dist` to `config.json`
+### 2.1 Configuring and installing assets
 
-You need to copy the file and edit it if necessary.
+You need to copy the `config.json.dist` file to `config.json` and edit it if necessary.
 
 ```bash
 $ cp config.json.dist config.json
 ```
 
-### 2.2 Configuring and installing assets
-
-You'll need to have NodeJS with `grunt-cli` and `bower` installed on your local machine in order to install the project assets.
-
-To install grunt, just run the following command (debian based system):
-
-```bash
-$ sudo npm install -g grunt-cli bower
-```
-
-Then, install the project npm and bower dependencies:
-
-```bash
-$ npm install
-$ bower install
-```
-
-And finally, initialize the project assets with grunt:
+Then, you just need to run `grunt` from the command line:
 
 ```bash
 $ grunt
 ```
 
-### 2.3 Initializing the read/write databases
+**Note**
+
+During development, you can use the `grunt watch` command to track live changes from your css and/or javascript
+files and having grunt automatically recompiling them:
+
+```bash
+$ grunt watch
+```
+
+### 2.2 Initializing the read/write databases
 
 ```bash
 $ app/console doctrine:database:create
@@ -69,7 +68,7 @@ $ app/console doctrine:schema:create --em=write
 $ app/console acme:task:create-task-view-model-schema
 ```
 
-### 2.4 Importing the "Task" demo fixtures
+### 2.3 Importing the "Task" demo fixtures
 
 ```bash
 $ app/console doctrine:fixtures:load
