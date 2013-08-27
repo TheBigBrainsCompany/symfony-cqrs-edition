@@ -1,10 +1,10 @@
 # Project specific
-/web/js/*
-/web/vendor
-/web/themes
-config.json
+/web/vendor/
+/web/themes/
+/config.json
 
 # Symfony
+/web/bundles/
 /app/bootstrap.php.cache
 /app/config/parameters.yml
 /var/cache/*
@@ -14,7 +14,6 @@ config.json
 /vendor/
 /bin/
 /composer.phar
-/web/bundles/
 
 # NodeJS
 /node_modules
