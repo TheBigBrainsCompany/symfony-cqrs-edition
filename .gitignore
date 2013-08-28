@@ -10,6 +10,7 @@
 /var/cache/*
 /var/logs/*
 /var/sessions/*
+/var/assets/
 /build/
 /vendor/
 /bin/
