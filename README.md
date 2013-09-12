@@ -27,10 +27,12 @@ $ curl -s http://getcomposer.org/installer | php
 Then, use the create-project command to generate a new application:
 
 ```bash
-$ php composer.phar create-project tbbc/symfony-standard-cqrs path/to/install
+$ php composer.phar create-project tbbc/symfony-standard-cqrs path/to/install dev-master
 ```
 
 Composer will install the project and all its dependencies under the `path/to/install` directory.
+
+**Note**: _Because it is not stable yet, you have to explicity set the `dev-master` version._
 
 
 ## 2. Configuring the project
