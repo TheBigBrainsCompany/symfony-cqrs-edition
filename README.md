@@ -164,6 +164,7 @@ web/app_dev.php/
 ## 7. Authors
 
 Boris Guéry    - guery.b@gmail.com  - [@borisguery](http://twitter.com/borisguery) - <http://borisguery.com>
+
 Benjamin Dulau - benjamin.dulau@gmail.com - [@delendial](http://twitter.com/delendial) - http://benjamindulau.com
 
 ## 8. License
