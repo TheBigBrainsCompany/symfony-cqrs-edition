@@ -1,8 +1,8 @@
 {
-    "name": "tbbc/symfony-standard-cqrs",
+    "name": "tbbc/symfony-cqrs-edition",
     "license": "MIT",
     "type": "project",
-    "description": "The Big Brains Company \"Symfony Standard CQRS Edition\"",
+    "description": "The Big Brains Company \"Symfony CQRS Edition\"",
     "autoload": {
         "psr-0": { "": "src/" }
     },
@@ -28,6 +28,7 @@
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "doctrine/data-fixtures": "dev-master"
     },
+    "replace": {"tbbc/symfony-standard-cqrs": "self.version"},
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
