@@ -1,4 +1,4 @@
-# The Big Brains Company - Symfony Standard CQRS
+# The Big Brains Company - Symfony CQRS Edition
 
 A default structure for CQRS oriented project and Symfony.
 
@@ -27,7 +27,7 @@ $ curl -s http://getcomposer.org/installer | php
 Then, use the create-project command to generate a new application:
 
 ```bash
-$ php composer.phar create-project tbbc/symfony-standard-cqrs path/to/install dev-master
+$ php composer.phar create-project tbbc/symfony-cqrs-edition path/to/install dev-master
 ```
 
 Composer will install the project and all its dependencies under the `path/to/install` directory.
