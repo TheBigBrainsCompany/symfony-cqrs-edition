@@ -6,6 +6,18 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "authors": [
+    {
+        "name": "Boris Guéry",
+        "email": "guery.b@gmail.com",
+        "homepage": "http://borisguery.com",
+    },
+    {
+        "name": "Benjamin Dulau",
+        "email": "dulau.benjamin@gmail.com",
+        "homepage": "http://benjamindulau.com"
+    }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.3.*",
