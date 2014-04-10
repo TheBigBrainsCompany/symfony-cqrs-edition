@@ -11,6 +11,7 @@
 /var/logs/*
 /var/sessions/*
 /var/assets/
+/var/install.lock
 /build/
 /vendor/
 /bin/
