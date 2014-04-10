@@ -9,9 +9,6 @@ A default structure for CQRS oriented project and Symfony.
 ## Requirements
 
 * PHP >= 5.3.3
-* NodeJs with Npm
-* grunt-cli npm package
-* bower npm package
 
 ## 1. Quick start
 
@@ -100,54 +97,19 @@ Composer will install the project and all its dependencies under the `path/to/in
 
 ## 3. Configuring the project
 
-In addition to the composer installation and in order to complete your installation, you need to do the following steps:
+### 3.1 Initializing the project
 
-### 3.1 Configuring and installing assets
-
-You need to copy the `config.json.dist` file to `config.json` and edit it if necessary.
+To automatically configure the project, you have to run the following command:
 
 ```bash
-$ cp config.json.dist config.json
+$ php app/console acme:task:initialize
 ```
 
-Then, you just need to run `grunt` from the command line:
+It will properly create your database and schema according to your configuration and import fixtures.
 
-```bash
-$ grunt
-```
+That's all folks! You're now ready to use the project.
 
-**Note**
-
-During development, you can use the `grunt watch` command to track live changes from your css and/or javascript
-files and having grunt automatically recompiling them:
-
-```bash
-$ grunt watch
-```
-
-### 3.2 Initializing the read/write databases
-
-```bash
-$ app/console doctrine:database:create
-$ app/console doctrine:schema:create --em=write
-$ app/console acme:task:create-task-view-model-schema
-```
-
-### 3.3 Importing the "Task" demo fixtures
-
-```bash
-$ app/console doctrine:fixtures:load
-```
-
-## 4. Browsing the "Task" demo application
-
-Congratulations! You're now ready to use the project.
-
-To see a real-live CQRS mini-project in action, access the following page:
-
-```
-web/app_dev.php/
-```
+To see a real-live CQRS mini-project in action access the project in your browser (according to your vhost configuration)
 
 ## 5. Getting started with CQRS
 
