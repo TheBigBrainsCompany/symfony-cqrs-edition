@@ -1,0 +1,20 @@
+{% extends 'AcmeTaskUiWebBundle::layout.html.twig' %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 jumbotron">
+            <h1>Hello, you!</h1>
+            <p>And welcome to the Big Brains Company - Symfony CQRS Edition</p>
+            <p>It looks like you're getting crazy and immediatialy tried to browse the project in your browser.</p>
+            <p>Don't worry, it'll be quick, but you first need to initialize the application, to do that, run the following command:</p>
+            <p><code>$ php app/console acme:task:initialize</code></p>
+
+            <p>One you are done, just refresh this page.</p>
+
+            <footer>
+                <p><a href="http://thebigbrainscompany.com/">thebigbrainscompany.com</a> - <a href="https://twitter.com/thebigbrainscom">@thebigbrainscom</a></p>
+            </footer>
+        </div>
+
+    </div>
+{% endblock main %}

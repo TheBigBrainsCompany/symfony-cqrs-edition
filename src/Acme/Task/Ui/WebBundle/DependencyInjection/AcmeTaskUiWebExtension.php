@@ -17,5 +17,6 @@ class AcmeTaskUiWebExtension extends Extension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
 
         $loader->load('controllers.xml');
+        $loader->load('listeners.xml');
     }
 }
