@@ -1,7 +1,0 @@
-{
-    "name": "TbbcSymfonyStandardCqrs",
-    "version": "1.0.0",
-    "dependencies": {
-        "bootstrap": "~3.0"
-    }
-}
