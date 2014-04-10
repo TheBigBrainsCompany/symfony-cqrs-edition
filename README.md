@@ -111,23 +111,23 @@ That's all folks! You're now ready to use the project.
 
 To see a real-live CQRS mini-project in action access the project in your browser (according to your vhost configuration)
 
-## 5. Getting started with CQRS
+## 4. Getting started with CQRS
 
 **TODO**
 
 
-## 6. Contributing
+## 5. Contributing
 
 1. Take a look at the [list of issues](http://github.com/TheBigBrainsCompany/symfony-cqrs-edition).
 2. Fork
 3. Write a test (for either new feature or bug)
 4. Make a PR
 
-## 7. Authors
+## 6. Authors
 
 * Boris Guéry    - guery.b@gmail.com  - [@borisguery](http://twitter.com/borisguery) - http://borisguery.com
 * Benjamin Dulau - benjamin.dulau@gmail.com - [@delendial](http://twitter.com/delendial) - http://benjamindulau.com
 
-## 8. License
+## 7. License
 
 `The Big Brains Company - Symfony CQRS Edition` is licensed under the MIT License - see the LICENSE file for details
