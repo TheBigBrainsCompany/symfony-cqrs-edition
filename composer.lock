@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "af03a639f3ae8dfb341b0ce0d148dd9b",
+    "hash": "f2f41c78e5f272ef8b7a2b83bac519c4",
     "packages": [
         {
             "name": "ano/cqrs-bundle",
@@ -459,60 +459,6 @@
                 "sql"
             ],
             "time": "2013-04-26 18:42:52"
-        },
-        {
-            "name": "liip/theme-bundle",
-            "version": "dev-master",
-            "target-dir": "Liip/ThemeBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/liip/LiipThemeBundle.git",
-                "reference": "7ccfedc4543c68aea8459cc4ce150c7216c7cd31"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipThemeBundle/zipball/7ccfedc4543c68aea8459cc4ce150c7216c7cd31",
-                "reference": "7ccfedc4543c68aea8459cc4ce150c7216c7cd31",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "symfony/framework-bundle": "~2.0"
-            },
-            "require-dev": {
-                "symfony/console": "~2.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Liip\\ThemeBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/liip/LiipThemeBundle/contributors"
-                },
-                {
-                    "name": "Liip AG",
-                    "homepage": "http://www.liip.ch/"
-                }
-            ],
-            "description": "Provides theming support for #Symfony2 Bundles",
-            "keywords": [
-                "themes",
-                "theming"
-            ],
-            "time": "2013-07-16 13:08:11"
         },
         {
             "name": "monolog/monolog",
@@ -1434,7 +1380,6 @@
     "stability-flags": {
         "tbbc/composer-javascript": 20,
         "ano/cqrs-bundle": 20,
-        "liip/theme-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "doctrine/data-fixtures": 20
     },

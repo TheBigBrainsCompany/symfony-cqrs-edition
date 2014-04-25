@@ -19,9 +19,6 @@ class AppKernel extends Kernel
             // CQRS
             new LiteCQRS\Plugin\SymfonyBundle\LiteCQRSBundle(),
             new Ano\CqrsBundle\AnoCqrsBundle(),
-
-            // UI
-            new Liip\ThemeBundle\LiipThemeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

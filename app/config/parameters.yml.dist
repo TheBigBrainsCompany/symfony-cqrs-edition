@@ -21,6 +21,3 @@ parameters:
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
     session_path:      "%kernel.root_dir%/../var/sessions"
-
-    themes:            ['default']
-    active_theme:      default

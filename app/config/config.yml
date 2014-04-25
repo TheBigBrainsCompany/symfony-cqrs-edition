@@ -70,13 +70,3 @@ swiftmailer:
 
 lite_cqrs:
     monolog: true
-
-liip_theme:
-    themes: %themes%
-    active_theme: %active_theme%
-    autodetect_theme: true
-    load_controllers: false
-    path_patterns:
-        bundle_resource:
-            - %%bundle_path%%/Resources/themes/%%current_theme%%/views/%%template%%
-            - %%bundle_path%%/Resources/themes/fallback_theme/views/%%template%%

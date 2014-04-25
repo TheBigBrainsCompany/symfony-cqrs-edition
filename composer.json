@@ -32,8 +32,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "tbbc/composer-javascript": "dev-master",
         "ano/cqrs-bundle": "dev-master",
-        "rhumsaa/uuid": "~2",
-        "liip/theme-bundle": "1.0.x-dev"
+        "rhumsaa/uuid": "~2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.2",
