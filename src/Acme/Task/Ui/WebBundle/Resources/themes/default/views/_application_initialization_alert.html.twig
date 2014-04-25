@@ -1,20 +1,20 @@
 {% extends 'AcmeTaskUiWebBundle::layout.html.twig' %}
 
 {% block main %}
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3 jumbotron">
-            <h1>Hello, you!</h1>
-            <p>And welcome to the Big Brains Company - Symfony CQRS Edition</p>
-            <p>It looks like you're getting crazy and immediatialy tried to browse the project in your browser.</p>
-            <p>Don't worry, it'll be quick, but you first need to initialize the application, to do that, run the following command:</p>
-            <p><code>$ php app/console acme:task:initialize</code></p>
+    <div class="center-block hello-block">
+        <img src="{{ asset('bundles/acmetaskuiweb/themes/default/images/hello-you.png') }}" alt="Hello, you!">
+        <p>
+            And welcome to the Big Brains Company - Symfony CQRS edition
+        </p>
+    </div>
 
-            <p>Once you are done, just refresh this page.</p>
+    <hr class="sep">
 
-            <footer>
-                <p><a href="http://thebigbrainscompany.com/">thebigbrainscompany.com</a> - <a href="https://twitter.com/thebigbrainscom">@thebigbrainscom</a></p>
-            </footer>
-        </div>
-
+    <div class="jumbotron instructions">
+        <p>You're almost done!</p>
+        <p>Don't worry, it will be quick, but you first need to initialize the application.</p>
+        <p>Just run the following command from your CLI:</p>
+        <p><code>$ php app/console acme:task:initialize</code></p>
+        <p>Once you are done, just refresh this page.</p>
     </div>
 {% endblock main %}

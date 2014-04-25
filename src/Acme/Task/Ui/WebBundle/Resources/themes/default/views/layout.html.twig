@@ -7,7 +7,8 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
         {% block stylesheets %}
-            <link href="{{ asset('bundles/acmetaskuiweb/themes/default/css/style.min.css') }}" rel="stylesheet" media="screen">
+            <link href="{{ asset('bundles/acmetaskuiweb/themes/default/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+            <link href="{{ asset('bundles/acmetaskuiweb/themes/default/css/style.css') }}" rel="stylesheet" media="screen">
         {% endblock stylesheets %}
 
         {% block javascripts_head %}
@@ -17,17 +18,27 @@
     </head>
     <body>
         {% block body %}
+        <div class="container main">
             <header class="page-header">
-                <h1>The Big Brains Company - Symfony Standard CQRS - Task Demo</h1>
+                <h1>Symfony CQRS edition - Task Demo</h1>
             </header>
 
-            <section class="main">
-                {% block main %}{% endblock %}
-            </section>
+            {% block main %}{% endblock %}
 
-            <footer>
-
+            <footer class="clearfix">
+                <div class="pull-left logo">
+                    <a href="http://thebigbrainscompany.com">
+                        <img src="{{ asset('bundles/acmetaskuiweb/themes/default/images/logo-little.png') }}" alt="The Big Brains Company">
+                    </a>
+                </div>
+                <div class="pull-right links">
+                    <p>
+                        <a href="http://thebigbrainscompany.com">thebigbrainscompany.com</a><br>
+                        @thebigbrainscom
+                    </p>
+                </div>
             </footer>
+        </div>
         {% endblock body %}
 
         {% block javascripts_foot %}{% endblock javascripts_foot %}
