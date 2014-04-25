@@ -18,7 +18,6 @@ class AppKernel extends Kernel
 
             // CQRS
             new LiteCQRS\Plugin\SymfonyBundle\LiteCQRSBundle(),
-            new Ano\CqrsBundle\AnoCqrsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

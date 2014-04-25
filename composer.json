@@ -31,8 +31,8 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "tbbc/composer-javascript": "dev-master",
-        "ano/cqrs-bundle": "dev-master",
-        "rhumsaa/uuid": "~2"
+        "rhumsaa/uuid": "~2",
+        "beberlei/lite-cqrs": "1.1.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.2",

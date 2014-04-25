@@ -2,8 +2,8 @@
 
 namespace Acme\Task\Domain\Model;
 
-use Ano\CqrsBundle\Domain\Event\DomainEventProvider;
 use Acme\Task\Domain\Event\CreatedTaskEvent;
+use LiteCQRS\DomainEventProvider;
 use Rhumsaa\Uuid\Uuid;
 
 class Task extends DomainEventProvider
