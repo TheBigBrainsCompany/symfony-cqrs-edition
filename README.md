@@ -118,3 +118,6 @@ refers to two different concepts*
 ## 6. License
 
 `The Big Brains Company - Symfony CQRS Edition` is licensed under the MIT License - see the LICENSE file for details
+
+
+[![The Big Brains Company - Logo](http://tbbc-valid.thebigbrainscompany.com/assets/images/logo-tbbc.png)](http://thebigbrainscompany.com)
