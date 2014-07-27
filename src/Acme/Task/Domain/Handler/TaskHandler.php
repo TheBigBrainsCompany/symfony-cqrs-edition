@@ -5,7 +5,7 @@ namespace Acme\Task\Domain\Handler;
 use Acme\Task\Command\CreateTaskCommand;
 use Acme\Task\Domain\Model\Task;
 use Acme\Task\Domain\Repository\TaskRepositoryInterface;
-use LiteCQRS\Bus\IdentityMapInterface;
+use LiteCQRS\Bus\IdentityMap\IdentityMapInterface;
 
 class TaskHandler implements TaskHandlerInterface
 {
