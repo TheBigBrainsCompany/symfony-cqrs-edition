@@ -42,14 +42,20 @@ class InitializeApplicationCommand extends ContainerAwareCommand
             return -1;
         }
 
-        $commands = array(
-            'doctrine:database:create'                => array('--verbose'  => true),
-            'doctrine:schema:create'                  => array('--em' => 'write'),
-            'acme:task:create-task-view-model-schema' => array(),
-            'doctrine:fixtures:load'                  => array(),
-        );
+        $commands = array();
+        $commands[] = array('doctrine:database:create'               , array('--verbose'  => true, '--connection' => 'write'));
+        $commands[] = array('doctrine:schema:create'                 , array('--em' => 'write'));
 
-        foreach ($commands as $commandName => $commandOptions) {
+        if ($this->getContainer()->getParameter('db_read_name') != $this->getContainer()->getParameter('db_write_name')) {
+            $commands[] = array('doctrine:database:create'           , array('--verbose'  => true, '--connection' => 'read'));
+        }
+
+        $commands[] = array('acme:task:create-task-view-model-schema', array());
+        $commands[] = array('doctrine:fixtures:load'                 , array());
+
+        foreach ($commands as $command) {
+            list($commandName, $commandOptions) = $command;
+
             $command = $this->getApplication()->find($commandName);
             $commandInput = new ArrayInput(
                 array_merge(
